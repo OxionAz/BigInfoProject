@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:gravity="bottom|center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="@dimen/activity_horizontal_margin"
+              android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="250dp"
+        android:minWidth="250dp"
+        android:background="@drawable/ic_menu_weather"
+        android:backgroundTint="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/weather_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:text="@string/description_value"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite"/>
+
+    <GridLayout
+        android:id="@+id/weather_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:columnCount="3"
+        android:rowCount="5">
+
+        <TextView
+            android:id="@+id/weather_temp"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_rowSpan="5"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:text="@string/temp_value"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:text="@string/realfeel"/>
+
+        <TextView
+            android:id="@+id/weather_realfeel_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:text="@string/realfeel_value"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:text="@string/humidity"/>
+
+        <TextView
+            android:id="@+id/weather_humidity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:text="@string/humidity_value"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:text="@string/windspeed"/>
+
+        <TextView
+            android:id="@+id/weather_windspeed_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:text="@string/windspeed_value"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:text="@string/visibility"/>
+
+        <TextView
+            android:id="@+id/weather_visibility_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:text="@string/visibility_value"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:text="@string/pressure"/>
+
+        <TextView
+            android:id="@+id/weather_pressure_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:text="@string/pressure_value"/>
+
+    </GridLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/weather_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:text="@string/provider"/>
+
+</LinearLayout>

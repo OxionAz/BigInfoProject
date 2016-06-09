@@ -5,4 +5,26 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="weather">Погода</string>
+    <string name="hotels">Отели</string>
+    <string name="others">Прочее</string>
+    <string name="settings">Настройки</string>
+    <string name="provider">WorldWeatherOnline.com</string>
+    <string name="pressure">Давление:</string>
+    <string name="pressure_value">%1$s Мпа</string>
+    <string name="visibility">Видимость:</string>
+    <string name="visibility_value">%1$s Км</string>
+    <string name="windspeed">Ветер:</string>
+    <string name="windspeed_value">%1$s Км/ч</string>
+    <string name="humidity">Влажность:</string>
+    <string name="humidity_value">%1$s</string>
+    <string name="realfeel">RealFeel®:</string>
+    <string name="realfeel_value">%1$s°C</string>
+    <string name="temp_value">%1$s°C</string>
+    <string name="description_value">%1$s</string>
+    <string-array name="weather_title_tabs">
+        <item>СЕГОДНЯ</item>
+        <item>ПОЧАСОВОЙ</item>
+        <item>НА НЕДЕЛЮ</item>
+    </string-array>
 </resources>
